@@ -1,6 +1,4 @@
 using System;
-using System.Reflection.Metadata;
-using System.Runtime.CompilerServices;
 
 class Program
 {
@@ -38,7 +36,7 @@ class Program
         }
 
         //stretch Requirements
-        if (lastDigit >= 7)
+        if (lastDigit >= 7) //including "+" or "-" next to the letter grade
         {
             symbol = "+";
         }
@@ -50,11 +48,11 @@ class Program
         {
             symbol = null;
         }
-        if (grade > 93)
+        if (grade > 93) // there is no A+ grade, only A and A-
         {
             symbol = null;
         }
-        if (grade<= 60)
+        if (grade<= 60) // there is no F+ or F- grades
         {
             symbol = null;
         }
