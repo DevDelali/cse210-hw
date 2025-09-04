@@ -7,9 +7,9 @@ class Program
         Console.WriteLine("Hello World! This is the Exercise1 Project.");
 
         Console.Write("Please enter your first name :");
-        string first_name = Console.ReadLine().ToUpper(); // capitalizing the first name
+        string firstName = Console.ReadLine();
         Console.Write("Please enter your last name :");
-        string last_name = Console.ReadLine().ToUpper();  // capitalizing the last name
-        Console.WriteLine($"Your name is {last_name}, {first_name} {last_name}.");
+        string lastName = Console.ReadLine();
+        Console.WriteLine($"Your name is {lastName}, {firstName} {lastName}.");
     }
 }      
