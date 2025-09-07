@@ -65,7 +65,5 @@ class Program
             }
         }
         Console.WriteLine($"The minimum number is {min}");
-
-
     }
 }
