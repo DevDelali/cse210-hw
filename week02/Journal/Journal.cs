@@ -21,16 +21,16 @@ public class Journal
         Console.WriteLine("Saving To File.....");
         string filename = "journal.txt"; 
 
-        using (StreamWriter writerFile = new StreamWriter(filename))
+        using (StreamWriter outputFile = new StreamWriter(filename))
         {
             foreach (Entry entry in _entries)
             {
-                writerFile.WriteLine($"{entry._date} {entry._promptText}");
-                writerFile.WriteLine($"{entry._entryText}");
+                outputFile.WriteLine($"{entry._date} {entry._promptText}");
+                outputFile.WriteLine($"{entry._entryText}");
             }
         }
     }
-    public void LoadFromFile(string fil)
+    public void LoadFromFile(string file)
     {
         Console.WriteLine("Reading From File");
         string filename = "journal.txt";

@@ -9,7 +9,7 @@ public class PromptGenerator
         "If I had one thing I could do over today, what would it be?"
     };
 
-    Random _random = new Random();
+    public Random _random = new Random();
 
     public string GetRandomPrompt()
     {
