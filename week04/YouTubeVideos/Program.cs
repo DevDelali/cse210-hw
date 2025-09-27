@@ -37,16 +37,5 @@ class Program
             yt.DisplayAllComments();
             Console.WriteLine("------------------------------------------");
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }
